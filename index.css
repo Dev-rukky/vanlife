@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .5s ease;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Gabarito', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  gap: 85%;
+  padding: 0px 50px;
+  background-color: #FFF7ED;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  color: #000;
+  font-size: 25.353px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40.271px;
+}
+
+nav>a {
+  margin: 0 8px;
+  color: #4D4D4D;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.923px;
+}
+
+nav>a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.home-container {
+  min-height: 80vh;
+  padding: 176px 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.home-text-container {
+  max-width: 620px;
+}
+
+.home-text-container h1 {
+  color: #000;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 153%;
+  text-transform: capitalize;
+}
+
+.home-text-container p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 47px;
+  padding: 18px 0px;
+}
+
+.vans {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  background-color: #FF8C38;
+  color: #fff;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  padding: .75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color .3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.vans:hover {
+  background-color: #000;
+}
+
+.vans:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.vans:hover .button__icon-svg:first-child {
+  transition: transform .3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.vans:hover .button__icon-svg--copy {
+  transition: transform .3s ease-in-out .1s;
+  transform: translate(0);
+}
+
+
+
+
+.homepic {
+  width: 56%;
+}
+
+.about-page-container {
+  padding: 105px 45px 0px;
+  min-height: 90vh;
+}
+
+.about-heading {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-heading p {
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  background: #115E59;
+  box-shadow: 0px 4px 12px -1px rgba(22, 22, 22, 0.25);
+  display: inline-flex;
+  padding: 6px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.about-heading h1 {
+  color: #161616;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 117%;
+  text-transform: capitalize;
+  max-width: 650px;
+}
+
+.our-mission {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14%;
+}
+
+.our-mission-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 588px;
+}
+
+.our-mission img {
+  width: 480px;
+}
+
+.our-mission-text h1 {
+  color: #161616;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.our-mission-text p {
+  color: #161616;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 186%;
+}
+
+.about-cta {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  background-color: #115E59;
+  color: #fff;
+  margin-top: 24px;
+}
+
+.about-cta h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 129.167%;
+  text-transform: capitalize;
+}
+
+.van-list-container {
+  padding: 0 35px;
+}
+
+.van-heading h1 {
+  color: #161616;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 46px 0px;
+}
+
+.van-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 64px 32px;
+  padding: 25px 0;
+}
+
+.van-tile {
+  max-width: 300px;
+}
+
+.van-tile img {
+  max-width: 300px;
+
+}
+
+.van-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.van-info h2 {
+  color: #161616;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.van-descript {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.van-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0 0;
+}
+
+
+.foot {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+}
+
+.foot p {
+  color: #aaa;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .home-container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .home-text-container h1,
+  .home-text-container p,
+  .our-mission-text h1,
+  .our-mission-text p {
+    text-align: center;
+  }
+
+  .home-text-container a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .homepic {
+    width: 80%;
+  }
+
+  .home-text-container h1,
+  .about-heading h1,
+  .our-mission h1 {
+    font-size: clamp(25px, 5vw, 40px);
+    line-height: 1.4;
+  }
+
+  .home-text-container p {
+    font-size: clamp(16px, 5vw, 20px);
+    line-height: 1.8;
+  }
+
+  .our-mission-text {
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    column-gap: 20px;
+  }
+
+  .our-mission {
+    flex-direction: column;
+  }
+
+  .our-mission img {
+    width: 80%;
+  }
+
+
+}
+
+@media only screen and (max-width: 625px) {
+  header {
+    padding: 0 15px;
+  }
+
+  .home-container,
+  .about-page-container {
+    padding: 75px 15px;
+  }
+}
