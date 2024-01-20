@@ -250,7 +250,7 @@ nav>a:hover {
 
 .van-list {
   display: grid;
-  grid-template-columns: minmax(1fr, 4fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   gap: 64px 32px;
   padding: 25px 0;
@@ -367,6 +367,9 @@ nav>a:hover {
     width: 80%;
   }
 
+  .van-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
 }
 
@@ -378,5 +381,11 @@ nav>a:hover {
   .home-container,
   .about-page-container {
     padding: 25px 15px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .van-list {
+    grid-template-columns: 1fr;
   }
 }
