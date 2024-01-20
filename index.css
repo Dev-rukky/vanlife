@@ -10,11 +10,19 @@
   font-family: 'Gabarito', sans-serif;
 }
 
+.main {
+  display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10vh;
+  height: 10dvh;
   gap: 85%;
   padding: 0px 50px;
   background-color: #FFF7ED;
@@ -46,12 +54,11 @@ nav>a:hover {
 }
 
 .home-container {
-  min-height: 80vh;
-  padding: 176px 50px 0px;
+  padding: 45px 50px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 30px 15px;
 }
 
 .home-text-container {
@@ -243,7 +250,7 @@ nav>a:hover {
 
 .van-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: minmax(1fr, 4fr);
   justify-items: center;
   gap: 64px 32px;
   padding: 25px 0;
@@ -295,7 +302,7 @@ nav>a:hover {
 
 .foot {
   width: 100%;
-  height: 10vh;
+  height: 10dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -370,6 +377,6 @@ nav>a:hover {
 
   .home-container,
   .about-page-container {
-    padding: 75px 15px;
+    padding: 25px 15px;
   }
 }
