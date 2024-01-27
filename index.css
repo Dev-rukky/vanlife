@@ -322,16 +322,71 @@ nav>a:hover {
   color: #FFEAD0;
 }
 
-.van-type.simple:hover, .van-type.simple.selected {
+.van-type.simple:hover,
+.van-type.simple.selected {
   background-color: #E17654;
 }
 
-.van-type.rugged:hover, .van-type.rugged.selected {
+.van-type.rugged:hover,
+.van-type.rugged.selected {
   background-color: #115E59;
 }
 
-.van-type.luxury:hover, .van-type.luxury.selected {
+.van-type.luxury:hover,
+.van-type.luxury.selected {
   background-color: #161616;
+}
+
+.vansDetails {
+  padding: 0 35px;
+}
+
+.van-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 130px;
+  flex-wrap: wrap;
+}
+
+.van-details img {
+  width: 500px;
+}
+
+.van-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+
+.van-info-container h2 {
+  color: #161616;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.van-info-container p {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 625px;
+}
+
+.link-button {
+  width: 614px;
+  height: 49.832px;
+  flex-shrink: 0;
+  border-radius: 4.983px;
+  background: #FF8C38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
 }
 
 
@@ -406,6 +461,11 @@ nav>a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .van-details {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
 }
 
 @media only screen and (max-width: 625px) {
@@ -421,6 +481,4 @@ nav>a:hover {
 
 }
 
-@media only screen and (max-width: 475px) {
-
-}
+@media only screen and (max-width: 475px) {}

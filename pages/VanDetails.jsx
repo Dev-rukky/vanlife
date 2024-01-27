@@ -12,7 +12,7 @@ function VanDetails() {
     }, [params.id])
 
     return (
-        <div className="van-details">
+        <div className="vansDetails">
             <div className="van-heading">
                 <h1>Explore our van options</h1>
             </div>
