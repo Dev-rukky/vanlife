@@ -52,6 +52,12 @@ nav>a:hover {
   text-decoration: underline;
 }
 
+a.active-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #161616;
+}
+
 .home-container {
   padding: 45px 50px 10px;
   display: flex;
