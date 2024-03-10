@@ -5,7 +5,6 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Vans from "./pages/Vans"
 import VanDetails from "./pages/VanDetails"
-import Layout from './components/Layout';
 import Dashboard from './pages/Host/Dashboard';
 import Income from './pages/Host/Income';
 import Reviews from './pages/Host/Reviews';
@@ -14,7 +13,11 @@ import HostVansDetails from './pages/Host/HostVansDetails.jsx';
 import HostVanInfo from './pages/Host/HostVanInfo.jsx';
 import HostVanPricing from './pages/Host/HostVanPricing.jsx';
 import HostVanPhotos from './pages/Host/HostVanPhotos.jsx';
+import NotFound from './pages/404.jsx';
+import Layout from './components/Layout';
 import HostLayout from './components/HostLayout';
+
+
 
 import "./server"
 
@@ -38,11 +41,11 @@ function App() {
                 <Route path="pricing" element={<HostVanPricing />} />
                 <Route path="photos" element={<HostVanPhotos />} />
               </Route>
-              
             </Route>
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
-        
+
       </div>
     </BrowserRouter>
   )
