@@ -706,6 +706,10 @@ a.active-link {
   gap: 48px;
 }
 
+.logged-out{
+ cursor: pointer;
+}
+
 .foot {
   width: 100%;
   height: 10dvh;
