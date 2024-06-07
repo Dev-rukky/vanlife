@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Link, defer, Await, useLoaderData } from "react-router-dom";
 import { getHostVans } from "../../api";
 import { requiredAuth } from "../../utils";
@@ -12,15 +13,18 @@ function Dashboard() {
     const loaderData = useLoaderData()
 
     function renderVanElements(vans) {
-        const hostVanEls = vans.map((vans) => (
+        const hostVanEls = vans.map((van) => (
             <div className="host-van-single" key={van.id} >
                 <img src={van.imageUrl} alt={`Photo of ${van.name}`} />
                 <div className="host-van-info">
                     <h3>{van.name}</h3>
                     <p className="van-descript">{van.description}</p>
                     <span>${van.price}/day</span>
+                    <Link to={`vans/${van.id}`}>View</Link>
                 </div>
+                
             </div>
+            
         ))
         return (
             <div className="host-van-list">
@@ -60,7 +64,9 @@ function Dashboard() {
                     <h2>Your listed vans</h2>
                     <Link to="vans">View all</Link>
                 </div>
-                
+                <Suspense fallback={<h3>Loading...</h3>}>
+                    <Await resolve={loaderData.vans}>{renderVanElements}</Await>
+                </Suspense>
             </section>
         </>
     )

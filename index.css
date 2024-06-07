@@ -706,8 +706,103 @@ a.active-link {
   gap: 48px;
 }
 
-.logged-out{
- cursor: pointer;
+.logged-out {
+  cursor: pointer;
+}
+
+.host-dashboard-earning {
+  padding: 20px 25px;
+  margin: 0 25px;
+  background-color: #115E59;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.info h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 100%;
+  margin: 0;
+}
+
+.info p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.info a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.host-name-dash {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.host-name-dash h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.host-name-dash h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 100%;
+}
+
+.host-dashboard-reviews {
+  margin: 32px 25px;
+  padding: 20px 25px;
+  border-radius: 5px;
+  background: #FFDDB2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review-score {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.host-dashboard-reviews a {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.star-con {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  color: #ff8c38;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 25px;
 }
 
 .foot {
