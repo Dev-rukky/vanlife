@@ -805,6 +805,59 @@ a.active-link {
   padding: 20px 25px;
 }
 
+.review-data {
+  padding: 40px 25px;
+}
+
+.info-main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 0;
+}
+
+.income-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.income-info h3 {
+  color: #161616;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.income-info p {
+  color: #4D4D4D;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.transaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.transaction h3 {
+  color: #161616;
+  font-size: 48px;;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.transaction p {
+  color: #4D4D4D;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
 .foot {
   width: 100%;
   height: 10dvh;
