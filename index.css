@@ -973,12 +973,12 @@ a.active-link {
   display: flex;
   align-items: center;
   gap: 4px;
-  margin: 16px 0;
+ 
 }
 
 .review-star {
   color: #ff8c38;
-  padding: 16px;
+  margin: 16px 0;
 }
 
 .name {
