@@ -844,7 +844,8 @@ a.active-link {
 
 .transaction h3 {
   color: #161616;
-  font-size: 48px;;
+  font-size: 48px;
+  ;
   font-weight: 600;
   line-height: normal;
 }
@@ -857,6 +858,148 @@ a.active-link {
   line-height: normal;
 }
 
+.top-review-container {
+  max-width: 511px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.top-text h2 {
+  color: #161616;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.top-text p {
+  color: #4D4D4D;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.top-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overall-rate {
+  display: flex;
+  align-items: center;
+}
+
+.overall-rate h3 {
+  color: #161616;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 22.923px;
+  padding-right: 5px;
+}
+
+.overall-rate p {
+  color: #161616;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  padding-left: 5px;
+}
+
+.five-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.five-star p {
+  color: #4D4D4D;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.923px;
+}
+
+.progress-bar-filled {
+  width: 335px;
+  height: 8px;
+  background: #FF8C38;
+  border-radius: 5px;
+}
+
+.four-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.four-star p {
+  color: #4D4D4D;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.923px;
+}
+
+.progress-bar {
+  width: 335px;
+  height: 8px;
+  background: #B9B9B9;
+  border-radius: 5px;
+}
+
+.starss {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 48px 0;
+}
+
+.customer-review {
+  padding: 20px 30px;
+  max-width: 590px;
+}
+
+.customer-review h3 {
+  color: #161616;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.review-info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 16px 0;
+}
+
+.review-star {
+  color: #ff8c38;
+  padding: 16px;
+}
+
+.name {
+  color: #161616;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 31.662px;
+}
+
+.date {
+  color: #8C8C8C;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.review-text {
+  color: #161616;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 168.75%;
+}
 
 .foot {
   width: 100%;
