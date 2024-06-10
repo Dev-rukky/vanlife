@@ -2,7 +2,7 @@ import { Link, NavLink, Outlet, useLoaderData } from "react-router-dom";
 import { getVan } from "../../api";
 import { requiredAuth } from "../../utils";
 
-export async function loader( { params, request } ) {
+export async function loader({ params, request }) {
     await requiredAuth(request)
     return getVan(params.id)
 }
@@ -40,13 +40,13 @@ function HostVansDetails() {
                         <h4>${currentVan.price}/day</h4>
 
                         <div className="host-van-details-nav">
-                            <NavLink 
+                            <NavLink
                                 style={({ isActive }) => isActive ? activeStyles : null}
                                 to="." end >Details</NavLink>
-                            <NavLink 
+                            <NavLink
                                 style={({ isActive }) => isActive ? activeStyles : null}
                                 to="pricing">Pricing</NavLink>
-                            <NavLink 
+                            <NavLink
                                 style={({ isActive }) => isActive ? activeStyles : null}
                                 to="photos"
                             >Photos</NavLink>
@@ -57,7 +57,7 @@ function HostVansDetails() {
                     </div>
                 </div>
 
-                
+
             </div>
         </section>
     )

@@ -22,9 +22,9 @@ function Dashboard() {
                     <span>${van.price}/day</span>
                     <Link to={`vans/${van.id}`}>View</Link>
                 </div>
-                
+
             </div>
-            
+
         ))
         return (
             <div className="host-van-list">

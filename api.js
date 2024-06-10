@@ -1,13 +1,5 @@
 import { initializeApp } from "firebase/app";
-import {
-    getFirestore,
-    collection,
-    doc,
-    getDocs,
-    getDoc,
-    query,
-    where
-} from "firebase/firestore/lite"
+import { getFirestore, collection, doc, getDocs, getDoc, query, where } from "firebase/firestore/lite"
 
 const firebaseConfig = {
     apiKey: "AIzaSyBP9YIuTEYx0ax06GsYEsY9AAZ2aqDLR2I",
@@ -16,7 +8,7 @@ const firebaseConfig = {
     storageBucket: "vanlife-68ec1.appspot.com",
     messagingSenderId: "335838025109",
     appId: "1:335838025109:web:1ed391d67f3a09a7ee529c"
-  };
+};
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)

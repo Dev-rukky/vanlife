@@ -16,7 +16,7 @@ export async function action({ request }) {
     const data = await loginUser({ email, password })
     localStorage.setItem("loggedin", true)
     return redirect(pathname)
-  } catch(err) {
+  } catch (err) {
     return err.message
   }
 

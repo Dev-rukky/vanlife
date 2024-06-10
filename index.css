@@ -65,7 +65,7 @@ a.active-link {
 }
 
 .home-container {
-  padding: 45px 50px 10px;
+  padding: 45px 50px 63px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -973,7 +973,7 @@ a.active-link {
   display: flex;
   align-items: center;
   gap: 4px;
- 
+
 }
 
 .review-star {
