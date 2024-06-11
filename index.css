@@ -611,8 +611,10 @@ a.active-link {
 
 .login-container {
   display: flex;
+  flex-wrap: wrap-reverse;
   align-items: center;
   justify-content: center;
+  padding: 25px 0;
 }
 
 .login-head p {
